@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameera Narendran - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --soft-blue: #B0C4DE;
+            --pale-lavender: #E6E6FA;
+            --mint-cream: #F5FFFA;
+            --slate-gray: #708090;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--mint-cream);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--soft-blue);
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section-heading {
+            color: var(--slate-gray);
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .section-heading:hover {
+            transform: scale(1.05);
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="section-heading">Sameera Narendran</h1>
+            <p>B.Tech Information Technology Student | Tech Enthusiast</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="section-heading">About Me</h2>
+            <p>I am a first-year B.Tech Information Technology student at Cochin University Of Science and Technology. With boundless curiosity for the world of technology, I have a mind open to learning and a passion for experimenting. I am here to explore the endless possibilities of the tech arena.</p>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-heading">Skills & Languages</h2>
+            <ul>
+                <li>Programming: Beginner level proficiency in C programming</li>
+                <li>Web Development: Currently learning</li>
+                <li>Languages: 
+                    <ul>
+                        <li>English (Fluent)</li>
+                        <li>Malayalam (Fluent)</li>
+                        <li>Kannada (Fluent)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="upcoming-events">
+            <h2 class="section-heading">Upcoming Event</h2>
+            <p>Excited to attend Tink-her-Hack, Kerala's biggest women-only hackathon organized by Tinkerhub!</p>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-heading">Contact Me</h2>
+            <div class="contact-info">
+                <p>📞 Phone: 8129904473</p>
+                <p>✉️ Email: sameeranarendran@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container" style="text-align: center; padding: 20px; background-color: var(--pale-lavender);">
+        <p>© 2024 Sameera Narendran. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
