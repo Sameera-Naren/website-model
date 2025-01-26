@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sameera Narendran - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        :root {
-            --soft-blue: #B0C4DE;
-            --pale-lavender: #E6E6FA;
-            --mint-cream: #F5FFFA;
-            --slate-gray: #708090;
-        }
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: var(--mint-cream);
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: white;
             line-height: 1.6;
         }
         .container {
@@ -29,39 +24,68 @@
             padding: 20px;
         }
         header {
-            background-color: var(--soft-blue);
-            padding: 20px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 60px 0;
             text-align: center;
+            margin-bottom: 20px;
         }
-        .section-heading {
-            color: var(--slate-gray);
-            text-align: center;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
+        .main-name {
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
         }
-        .section-heading:hover {
-            transform: scale(1.05);
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
         }
         section {
-            background-color: white;
-            margin: 20px 0;
+            border-radius: 15px;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        #about {
+            background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+        }
+        #skills {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        #upcoming-events {
+            background: linear-gradient(135deg, #ff6a88 0%, #ff6a88 50%, #ff99ac 100%);
+        }
+        #contact {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .section-heading {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        ul {
+            list-style-type: none;
         }
         .contact-info {
             display: flex;
             justify-content: center;
             gap: 20px;
+            text-align: center;
+        }
+        footer {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
         @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 10px;
+            .main-name {
+                font-size: 2.5rem;
             }
             .contact-info {
                 flex-direction: column;
-                align-items: center;
             }
         }
     </style>
@@ -69,8 +93,8 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="section-heading">Sameera Narendran</h1>
-            <p>B.Tech Information Technology Student | Tech Enthusiast</p>
+            <h1 class="main-name">Sameera Narendran</h1>
+            <p class="subtitle">B.Tech Information Technology Student | Tech Enthusiast</p>
         </div>
     </header>
 
@@ -109,7 +133,7 @@
         </section>
     </main>
 
-    <footer class="container" style="text-align: center; padding: 20px; background-color: var(--pale-lavender);">
+    <footer>
         <p>© 2024 Sameera Narendran. All Rights Reserved.</p>
     </footer>
 </body>
